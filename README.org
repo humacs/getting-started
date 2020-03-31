@@ -1,2 +1,9 @@
 * getting-started
 How to get started using the humacs collaboration tools!
+** OSX
+  #+begin_src shell
+    brew install tmux tmate jq kubectl kind the_silver_searcher ripgrep go@1.14
+    brew cask install emacs emacsclient iterm2 docker
+    git clone --recursive https://github.com/kubemacs/kubemacs.git ~/.emacs.d
+    curl -L https://storage.googleapis.com/apisnoop/dev/kubemacs-cache-0.9.32.tgz | tar --extract --directory ~/.emacs.d/
+  #+end_src
