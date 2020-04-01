@@ -1,19 +1,7 @@
 * getting-started
 How to get started using the humacs collaboration tools!
 
-** OSX
-*** xcode
-This is automatically installed if you use Brew.sh
-https://guide.macports.org/#installing.xcode
-  #+begin_src shell
-    xcode-select --install
-    sudo xcodebuild -license
-  #+end_src
-*** MacPorts
-Macports is another alternative to brew with a different community culture.
-  #+begin_src shell
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-  #+end_src
+** OSX + Brew
 *** Brew.sh
 https://brew.sh is a package manager for OSX.
   #+begin_src shell
@@ -46,4 +34,14 @@ Brew currently install emacs 26.3
   #+begin_src shell
     brew install kubectl kind go@1.14 jq # for k8s development
     brew cast install docker # needed for many containery things
+  #+end_src
+
+** OSX + MacPorts
+*** xcode
+Macports is another alternative to brew with a different community culture.
+xcode is automatically installed if you use Brew.sh
+https://guide.macports.org/#installing.xcode
+  #+begin_src shell
+    xcode-select --install
+    sudo xcodebuild -license
   #+end_src
