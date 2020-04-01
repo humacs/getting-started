@@ -1,9 +1,49 @@
 * getting-started
 How to get started using the humacs collaboration tools!
+
 ** OSX
+*** xcode
+This is automatically installed if you use Brew.sh
+https://guide.macports.org/#installing.xcode
   #+begin_src shell
-    brew install tmux tmate jq kubectl kind the_silver_searcher ripgrep go@1.14
-    brew cask install emacs emacsclient iterm2 docker
+    xcode-select --install
+    sudo xcodebuild -license
+  #+end_src
+*** MacPorts
+Macports is another alternative to brew with a different community culture.
+  #+begin_src shell
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  #+end_src
+*** Brew.sh
+https://brew.sh is a package manager for OSX.
+  #+begin_src shell
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  #+end_src
+*** Emacs 26.2
+Brew currently install emacs 26.3
+  #+begin_src shell
+    brew cask install emacs # the absolute minimum of vanilla emacs
+  #+end_src
+*** Humacs emacs config
+  #+begin_src shell
     git clone --recursive https://github.com/kubemacs/kubemacs.git ~/.emacs.d
     curl -L https://storage.googleapis.com/apisnoop/dev/kubemacs-cache-0.9.32.tgz | tar --extract --directory ~/.emacs.d/
+  #+end_src
+*** tmate/tmux
+  #+begin_src shell
+      brew install tmux # for local terminal+tab creation
+      brew install tmate # for terminal+tab sharing
+  #+end_src
+*** iTerm2 (a very nice terminal)
+  #+begin_src shell
+    brew cast install iterm2
+  #+end_src
+*** searching
+  #+begin_src shell
+    brew install the_silver_searcher ripgrep fast # for integrated searching
+  #+end_src
+*** kubernetes related software
+  #+begin_src shell
+    brew install kubectl kind go@1.14 jq # for k8s development
+    brew cast install docker # needed for many containery things
   #+end_src
