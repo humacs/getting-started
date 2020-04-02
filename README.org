@@ -14,7 +14,7 @@ Brew currently install emacs 26.3
   #+end_src
 *** Humacs emacs config
   #+begin_src shell
-    git clone --recursive https://github.com/humacs/humacs.git ~/.emacs.d
+    git clone --recursive https://github.com/humacs/.emacs.d.git ~/.emacs.d
   #+end_src
   #+begin_src shell
     # a cache of the elisp packages can make the initial start time much lower
