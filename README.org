@@ -93,16 +93,17 @@ Brew currently install emacs 26.3
   #+begin_src shell
     git clone --recursive https://github.com/humacs/.emacs.d.git ~/.emacs.d
   #+end_src
+  a cache of the elisp packages can make the initial start time much lower
   #+begin_src shell
-    # a cache of the elisp packages can make the initial start time much lower
     curl -L https://storage.googleapis.com/apisnoop/dev/kubemacs-cache-0.9.32.tgz | tar --extract --directory ~/.emacs.d/
   #+end_src
 *** tmate/tmux
   for local terminal+tab creation
   #+begin_src shell
     brew install tmux
-  for terminal+tab sharing
-  #+end_src  #+begin_src shell
+  #+end_src
+  for sharing terminal+tabs with others
+  #+begin_src shell
     brew install tmate
   #+end_src
 *** iTerm2 (a very nice terminal)
