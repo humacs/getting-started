@@ -108,7 +108,7 @@ Brew currently install emacs 26.3
   #+end_src
 *** iTerm2 (a very nice terminal)
   #+begin_src shell
-    brew cast install iterm2
+    brew cask install iterm2
   #+end_src
 *** searching
   commands for fas integrated searching, used by emacs
@@ -122,7 +122,7 @@ Brew currently install emacs 26.3
   #+end_src
   needed for many containery things
   #+begin_src shell
-    brew cast install docker
+    brew cask install docker
   #+end_src
 
 ** OSX + MacPorts
