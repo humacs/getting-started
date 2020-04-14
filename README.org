@@ -98,10 +98,11 @@ Brew currently install emacs 26.3
     curl -L https://storage.googleapis.com/apisnoop/dev/kubemacs-cache-0.9.32.tgz | tar --extract --directory ~/.emacs.d/
   #+end_src
 *** tmate/tmux
+  for local terminal+tab creation
   #+begin_src shell
-    # for local terminal+tab creation
     brew install tmux
-    # for terminal+tab sharing
+  for terminal+tab sharing
+  #+end_src  #+begin_src shell
     brew install tmate
   #+end_src
 *** iTerm2 (a very nice terminal)
@@ -109,13 +110,18 @@ Brew currently install emacs 26.3
     brew cast install iterm2
   #+end_src
 *** searching
+  commands for fas integrated searching, used by emacs
   #+begin_src shell
-    brew install the_silver_searcher ripgrep fast # for integrated searching
+    brew install the_silver_searcher ripgrep
   #+end_src
 *** kubernetes related software
+  for k8s development
   #+begin_src shell
-    brew install kubectl kind go@1.14 jq # for k8s development
-    brew cast install docker # needed for many containery things
+    brew install kubectl kind go@1.14 jq
+  #+end_src
+  needed for many containery things
+  #+begin_src shell
+    brew cast install docker
   #+end_src
 
 ** OSX + MacPorts
