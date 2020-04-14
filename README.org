@@ -99,8 +99,10 @@ Brew currently install emacs 26.3
   #+end_src
 *** tmate/tmux
   #+begin_src shell
-      brew install tmux # for local terminal+tab creation
-      brew install tmate # for terminal+tab sharing
+    # for local terminal+tab creation
+    brew install tmux
+    # for terminal+tab sharing
+    brew install tmate
   #+end_src
 *** iTerm2 (a very nice terminal)
   #+begin_src shell
