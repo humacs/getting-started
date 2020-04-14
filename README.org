@@ -2,6 +2,8 @@
 How to get started using the humacs collaboration tools!
 
 ** OSX + Brew
+*** Launch Terminal.app
+~command-space~ ~Terminal.app~
 *** Brew.sh
 https://brew.sh is a package manager for OSX.
   #+begin_src shell
