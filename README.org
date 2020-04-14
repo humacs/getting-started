@@ -5,7 +5,7 @@ How to get started using the humacs collaboration tools!
 *** Launch Terminal.app
 ~command-space~ ~Terminal.app~
 *** Brew.sh
-https://brew.sh is a package manager for OSX.
+https://brew.sh is a package manager for OSX. This install can take a while, and will likely require your password a few times.
   #+begin_src shell
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   #+end_src
@@ -38,6 +38,51 @@ https://brew.sh is a package manager for OSX.
     ==> The Xcode Command Line Tools will be installed.
 
     Press RETURN to continue or any other key to abort
+    Done with Command Line Tools for Xcode
+    Done.
+    ==> /usr/bin/sudo /bin/rm -f /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+    Password:
+    ==> Installation successful!
+
+    ==> Homebrew has enabled anonymous aggregate formulae and cask analytics.
+    Read the analytics documentation (and how to opt-out) here:
+      https://docs.brew.sh/Analytics
+    No analytics data has been sent yet (or will be during this `install` run).
+    
+    ==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+      https://github.com/Homebrew/brew#donations
+    
+    ==> Next steps:
+    - Run `brew help` to get started
+    - Further documentation: 
+        https://docs.brew.sh
+  #+end_example
+  
+  #+begin_example
+  Password:
+    ==> /usr/bin/sudo /bin/mkdir -p /usr/local/bin /usr/local/etc /usr/local/include /usr/local/lib /usr/local/sbin /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Homebrew /usr/local/Frameworks
+    ==> /usr/bin/sudo /bin/chmod g+rwx /usr/local/bin /usr/local/etc /usr/local/include /usr/local/lib /usr/local/sbin /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Homebrew /usr/local/Frameworks
+    ==> /usr/bin/sudo /usr/sbin/chown hh /usr/local/bin /usr/local/etc /usr/local/include /usr/local/lib /usr/local/sbin /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Homebrew /usr/local/Frameworks
+    ==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local/bin /usr/local/etc /usr/local/include /usr/local/lib /usr/local/sbin /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Homebrew /usr/local/Frameworks
+    ==> /usr/bin/sudo /bin/mkdir -p /Users/hh/Library/Caches/Homebrew
+    ==> /usr/bin/sudo /bin/chmod g+rwx /Users/hh/Library/Caches/Homebrew
+    ==> /usr/bin/sudo /usr/sbin/chown hh /Users/hh/Library/Caches/Homebrew
+    ==> Searching online for the Command Line Tools
+    ==> /usr/bin/sudo /usr/bin/touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+    ==> Installing Command Line Tools for Xcode-11.4
+    ==> /usr/bin/sudo /usr/sbin/softwareupdate -i Command\ Line\ Tools\ for\ Xcode-11.4
+    Software Update Tool
+    
+    
+    Downloading Command Line Tools for Xcode
+    Downloaded Command Line Tools for Xcode
+    Installing Command Line Tools for Xcode
+    ==> /usr/bin/sudo /usr/bin/xcode-select --switch /Library/Developer/CommandLineTools
+    ==> Downloading and installing Homebrew...
+    ==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+      https://github.com/Homebrew/brew#donations
+    ==> Tapping homebrew/core
+    Cloning into '/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core'...
   #+end_example
 *** Emacs 26.2
 Brew currently install emacs 26.3
