@@ -87,7 +87,7 @@ https://brew.sh is a package manager for OSX. This install can take a while, and
 *** Emacs 26.2
 Brew currently install emacs 26.3
   #+begin_src shell
-    brew cask install emacs # the absolute minimum of vanilla emacs
+    brew cask install emacs
   #+end_src
 *** Humacs emacs config
   #+begin_src shell
